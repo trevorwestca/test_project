@@ -1,0 +1,42 @@
+
+// Body
+$body-bg: #f5f8fa;
+
+// Typography
+$font-family-sans-serif: "Raleway", sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+$break-small: 768px;
+$break-large: 1024px;
+
+$grey-blue: #4c6a82;
+$blue: #8ec4f0;
+$light-blue: #c7f6fe;
+$light-blue2: #93c8f2;
+
+$white-blue: #dcf2ff;
+
+$grey: #707271;
+$light-grey:#9ea09f;
+$grey2: #8a8c8b;
+
+$white: #f7fbfc;
+
+$input-bg: #dbf3ff;
+$input-text: #a098a3;
+
+$submit-bg:#73cfff;
+$submit-text:#3b7cbe;
+
+$submit-bg2:#417dc5;
+$submit-text2:#daedfe;
+
+%flip {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}

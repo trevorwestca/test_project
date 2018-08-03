@@ -1,0 +1,164 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+body {
+  background-color:$white;
+  color:$grey2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight:normal;
+}
+
+a {
+  color:$light-blue;
+}
+
+a:hover {
+  color:$light-blue;
+  text-decoration:underline;
+}
+
+p {
+  font-size:16px;
+  line-height:1.3;
+}
+
+.main-content {
+  max-width: $break-large;
+  //  margin: 0 auto;
+  //  @media screen and (max-width: $break-large) {
+  //    max-width: 1024px;
+  //  }
+  //  @media screen and (min-width: $break-small) {
+  //    max-width: 1024px;
+  //  }
+}
+.header {
+  background:$grey-blue;
+  padding:10px 20px 0;
+  h1.logo > a{
+    color:$blue;
+    &:hover {
+      text-decoration:none;
+    }
+    > span {
+      margin-top:20px;
+      display:inline-block;
+    }
+    > img {
+      margin-top:-16px;
+    }
+  }
+  .account > a {
+    display:inline-block;
+    margin-top:20px;
+    font-size:24px;
+
+    @media screen and (max-width:400px) {
+      padding-bottom:20px;
+    }
+ }
+}
+
+.banner {
+  position: relative;
+  overflow: hidden;
+  &:before {
+    background-image: url('/img/banner.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  padding:40px 20px 40px;
+
+  h2 {
+    color:$light-blue;
+    font-size:20px;
+    margin-bottom:20px;
+  }
+
+  p {
+    color:$light-blue;
+  }
+
+  &.login {
+    &:before {
+      @extend %flip;
+    }
+    padding-top:110px;
+    margin-top:120px;
+    margin-bottom:120px;
+  }
+
+  &.profile {
+    &:before {
+      @extend %flip;
+    }
+
+    padding:20px;
+
+    h3 {
+      color:$white-blue;
+      margin-bottom:0;
+    }
+
+
+  }
+}
+
+.content {
+  padding:40px 20px 40px;
+  h3 {
+    color:$grey;
+    font-size:18px;
+    margin-bottom:0;
+  }
+  p {
+    color:$light-grey;
+  }
+}
+
+.form-control {
+  background-color:$input-bg;
+  border-color:$input-bg;
+  border-radius:0;
+  color:$input-text;
+  margin-bottom:10px;
+  padding:18px 16px;
+  font-size:16px;
+}
+
+.form-group button {
+  border-radius:0;
+  background-color:$submit-bg;
+  border-color:$submit-bg;
+  color:$submit-text;
+  outline:0;
+  font-size:16px;
+  padding:4px 16px;
+}
+
+.profile.form {
+  padding:20px;
+  .form-group button {
+    background-color:$submit-bg2;
+    color:$submit-text2;
+    margin-top:20px;
+    padding:10px 16px;
+  }
+}
