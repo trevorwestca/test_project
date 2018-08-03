@@ -14,7 +14,7 @@ Requirements:
 
 Laravel 5.6
 
-1. create your .env file in the root and then a database in mysql (matching your .env database record)
+1. create your .env (copy .env.example) file in the root and then a database in mysql (matching your .env database record)
 2. composer install
 3. npm install
 4. php artisan migrate
